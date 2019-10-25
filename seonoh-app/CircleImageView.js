@@ -4,12 +4,15 @@ import React,{ Component } from 'react'
 class CircleImageView extends Component{
     render(){
         const { image } = this.props;
+        const { circleWidth } = this.props
+        const { circleHeight } = this.props
+
         return(
             <Image
                 source = {{ uri: image}}
                 style = {{
-                    width : 40, 
-                    height : 40, 
+                    width : circleWidth, 
+                    height : circleHeight, 
                     borderRadius : 30/1
                 }}
             />

@@ -24,7 +24,9 @@ exports.checkData = (name,data)=> {
                 break;
             }
             case 'user-title' : {
+                // console.log('userTitle@@ : ',data)
                 data = data[0]['title']
+                
                 break;
             }
             case 'user-title-color' : {

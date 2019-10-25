@@ -6,12 +6,10 @@ export default class ContentDetailHeaderView extends BaseHeaderView {
 
     render() {
         return (
-            <View style ={{
-
-            }}>
+        
 
             <BaseHeaderView
-                backColor = '#00ff0000'>
+                backColor = '#000000'>
                 <Image
                     source={require('../res/question_detail/btn_cancel_bl.png')}
                     style={{
@@ -40,7 +38,7 @@ export default class ContentDetailHeaderView extends BaseHeaderView {
                         marginLeft: 8
                     }} />
             </BaseHeaderView>
-            </View>
+
 
         );
     }

@@ -30,14 +30,16 @@ export default class ContentsItem {
         contentModel.isLike = checkData('is-like', contentItem['is-like'])
         contentModel.isStored = checkData('is-stored', contentItem['is-stored'])
 
+        // console.log('userTitle : ',contentItem['user-title'][0]['title'])
+
         try{
-            contentModel.userTitle = checkData('user-title', contentItem['user-title'][0]['title'])
-            }catch(err){
+            contentModel.userTitle = checkData('user-title', contentItem['user-title'])
+                }catch(err){
             contentModel.userTitle = ''
         }
 
         try {
-            contentModel.userTitleColor = checkData('user-title-color', contentItem['user-title'][0]['color'])
+            contentModel.userTitleColor = checkData('user-title-color', contentItem['user-title'])
         } catch (error) {
             contentModel.userTitleColor = 'white'
         }

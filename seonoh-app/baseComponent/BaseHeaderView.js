@@ -1,5 +1,6 @@
 import { View } from 'react-native';
 import React from 'react'
+import { getStatusBarHeight } from 'react-native-status-bar-height'
 
 /*
     HeaderView 
@@ -7,15 +8,18 @@ import React from 'react'
 
 export default class BaseHeaderView extends React.Component {
     render() {
+        console.log('statusbar height : ',getStatusBarHeight())
         const {backColor} = this.props
         return (
             <View style={
                 {
+                    opacity : 0.5,
+                    flex : 1,
                     paddingLeft: 14,
                     paddingRight: 14,
                     flexDirection: 'row',
                     height: 50,
-                    marginTop : 40,
+                    marginTop : getStatusBarHeight(),
                     alignItems: 'center',
                     alignContent: 'center',
                     backgroundColor : backColor
