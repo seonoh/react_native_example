@@ -101,7 +101,8 @@ export default class ContentDetailRootView extends Component {
                                     marginLeft : 8
                                 }}/>
                                 <Text style ={{
-                                    marginLeft : 4
+                                    marginLeft : 4,
+                                    color : 'white'
                                 }}>
                                     {item.likeCount}
                                 </Text>
@@ -113,23 +114,34 @@ export default class ContentDetailRootView extends Component {
                                     marginLeft : 8
                                 }}/>
                                 <Text  style ={{
-                                    marginLeft : 4
+                                    marginLeft : 4,
+                                    color : 'white'
                                 }}>
                                     {item.commentCount}
                                 </Text>
                                 <Image
-                                source = {require('../res/question_detail/icon_view.png')}
-                                style ={{
-                                    width : 20,
-                                    height : 20,
-                                    marginLeft : 8
+                                    source = {require('../res/question_detail/icon_view.png')}
+                                    style ={{
+                                        width : 20,
+                                        height : 20,
+                                        marginLeft : 8
                                 }}/>
                                 <Text  style ={{
-                                    marginLeft : 4
+                                    marginLeft : 4,
+                                    color : 'white'
                                 }}>
                                     {item.viewCount}
                                 </Text>
                         </View>
+                    </View>
+
+                    <View>
+                        <View style ={{
+                            width : 10,
+                            height : 10,
+                            backgroundColor : 'blue',
+                            borderRadius : 20
+                        }}/>
                     </View>
 
                 </View>
@@ -190,7 +202,7 @@ export default class ContentDetailRootView extends Component {
                 
             )
         }else{
-            console.log('detail item : ',item)
+            // console.log('detail item : ',item)
 
             if(item.type == 0){
                 return(

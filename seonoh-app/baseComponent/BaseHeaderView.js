@@ -8,7 +8,6 @@ import { getStatusBarHeight } from 'react-native-status-bar-height'
 
 export default class BaseHeaderView extends React.Component {
     render() {
-        console.log('statusbar height : ',getStatusBarHeight())
         const {backColor} = this.props
         return (
             <View style={
